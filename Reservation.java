@@ -9,6 +9,7 @@ public class Reservation {
 	int endh;
 	int startm;
 	int endm;
+	int repeating;
 	String name;
 	String reserver;
 	LocalDateTime day;
@@ -16,7 +17,7 @@ public class Reservation {
 	 * 1 - 00:15
 	 * etc.
 	 */
-    public Reservation(int s, int e, int d, String n, String w) {
+    public Reservation(int s, int e, int d, int r, String n, String w) {
     	start=s;
     	end=e;
     	starth=s/4;
@@ -29,6 +30,7 @@ public class Reservation {
     	day=day.withMinute(startm);
     	name=n;
     	reserver=w;
+    	repeating = r;
     }
     public String toString() {
     	return name+" by "+reserver+" at "+day+"-"+endh+":"+endm;
