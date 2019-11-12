@@ -1,6 +1,6 @@
 Assembly Hall, ACB, 20-
 Latin Study, ACB, 20-
-Mayer Auditorium, ACB, 000
+Mayer Auditorium, ACB, ---
 Training Room, DCTR, 123
 Seabrooke Room, ELM, 00-
 Elm St Tower Room, ELM, 00-
