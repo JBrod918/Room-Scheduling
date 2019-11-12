@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Room Scheduler</title>
+</head>
+<script>
+n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+</script>
+<body>
+<form action="/schedule" method="POST">
+
+<h1>Room reservation form</h1>
+<p>Special Requests</p>
+<input type="text" name="name">
+<p>Your email</p>
+<input type="email" name="replyto">
+<p>Room Selection</p>
+<select>
+  <option value="The Forum">The Forum</option>
+  <option value="EPAC 316">EPAC 316</option>
+  <option value="EPAC 319">EPAC 319</option>
+  <option value="Meeting Room">Meeting Room</option>
+  <option value="Club Room A">Club Room A</option>
+  <option value="Club Room B">Club Room B</option>
+</select>
+<p>Reservation day</p>
+<input type="date" id="reservation" name="reservation_day"
+       value= y + "-" + m + "-" + d>
+<p></p>
+<input type="submit" value="Send">
+</textarea>
+</form>
+<h2>EPAC - 2nd Floor</h2>
+<img src="PACSP02.jpg" alt="Workplace" style="width:1020px;height:660px"usemap="#workmap">
+<h2>EPAC - 3rd Floor</h2>
+<img src="PACSP03.jpg" alt="Workplace" style="width:1020px;height:660px"usemap="#workmap">
+</map>
+</body>
+</html>
