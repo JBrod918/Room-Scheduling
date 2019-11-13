@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Room Scheduler</title>
+<title>Page Title</title>
 </head>
 <script>
 n =  new Date();
@@ -10,7 +10,7 @@ m = n.getMonth() + 1;
 d = n.getDate();
 </script>
 <body>
-<form action="/schedule" method="POST">
+<form action="https://formspree.io/jackzhang01234@gmail.com" method="POST">
 
 <h1>Room reservation form</h1>
 <p>Special Requests</p>
@@ -25,6 +25,9 @@ d = n.getDate();
   <option value="Meeting Room">Meeting Room</option>
   <option value="Club Room A">Club Room A</option>
   <option value="Club Room B">Club Room B</option>
+  <option value="Basement Meeting Room">Basement Meeting Room</option>
+  <option value="TV Room">TV Room/option>
+  <option value="Work Room">Work Room</option>
 </select>
 <p>Reservation day</p>
 <input type="date" id="reservation" name="reservation_day"
@@ -33,10 +36,13 @@ d = n.getDate();
 <input type="submit" value="Send">
 </textarea>
 </form>
+<h2>EPAC - Basement</h2>
+<img src="PACSP0B.jpg" alt="Workplace" style="width:1020px;height:660px"usemap="#workmap">
 <h2>EPAC - 2nd Floor</h2>
 <img src="PACSP02.jpg" alt="Workplace" style="width:1020px;height:660px"usemap="#workmap">
 <h2>EPAC - 3rd Floor</h2>
 <img src="PACSP03.jpg" alt="Workplace" style="width:1020px;height:660px"usemap="#workmap">
+
 </map>
 </body>
 </html>
