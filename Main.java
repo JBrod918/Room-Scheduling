@@ -31,4 +31,14 @@ public class Main
 		rooms[0].newRes(7, 9, 6, 0, "Exonian", "Lisa");
 		System.out.println(rooms[0].events.get(0));
 	}
+	
+	public String printAllRes() {
+		String text = "";
+		for(int i = 0; i < rooms.length; i++) {
+			for(int j = 0; j < rooms[i].events.size(); j++) {
+				text += rooms[i].events.get(j);
+			}
+		}
+		return text;
+	}
 }
